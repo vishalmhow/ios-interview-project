@@ -7,8 +7,12 @@
 
 import UIKit
 
-class CoffeeShopItemView: UIView {
+class CoffeeShopItemView: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var reviewLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }
