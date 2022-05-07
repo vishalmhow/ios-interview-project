@@ -8,9 +8,6 @@
 
 import Foundation
 
-//struct Shops: Codable {
-//    let coffeeShop: [CoffeeShop]
-//}
 struct CoffeeShop: Codable {
     let name: String
     let review: String

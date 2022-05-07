@@ -22,8 +22,6 @@ class CoffeeShopeVC: UIViewController {
                 }
             }
         }
-//       let cofee = viewModel.loadJson(fileName: "CoffeeShops")
-//        print(cofee)
     }
     
     func registerNib() {
@@ -39,13 +37,7 @@ extension CoffeeShopeVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeShopItemView", for: indexPath) as? CoffeeShopItemView else {
             return UITableViewCell()
         }
-        cell.nameLabel.text = "Lofty"
-        cell.reviewLabel.text = "Knowledgeable staff, stacked menu. Trust the Ethiopian in a pour over if you know your flavors. Will be back for the rest of this menu soon."
-        cell.layoutIfNeeded()
-        cell.ratingLabel.text = "rating: 4"
-        
-        cell.nameLabel.text = self.viewModel.coffeeShopes[indexPath.row].name
-        
+        cell.configureCoffeeShopItemView(coffeeShop: self.viewModel.coffeeShopes[indexPath.row])
         return cell
     }
 }
