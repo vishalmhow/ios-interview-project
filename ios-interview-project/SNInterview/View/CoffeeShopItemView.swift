@@ -14,12 +14,15 @@ class CoffeeShopItemView: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.clear
+        self.selectedBackgroundView = backgroundView
+        self.layoutIfNeeded()
     }
-    
+    // MARK: - CoffeeShopItemView Configure
     func configureCoffeeShopItemView(coffeeShop: CoffeeShop) {
         self.nameLabel.text = coffeeShop.name
         self.reviewLabel.text = coffeeShop.review
         self.ratingLabel.text = "\("Rating: ") \(String(coffeeShop.rating))"
-        self.layoutIfNeeded()
     }
 }

@@ -9,10 +9,17 @@
 import UIKit
 
 class ReviewVC: UIViewController {
-
+    
+    @IBOutlet weak var reviewLabel: UILabel!
+    var reviewString = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        self.reviewLabel.text = reviewString
+    }
+    // MARK: - Close button action
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        self.view.removeFromSuperview()
     }
 }

@@ -16,7 +16,6 @@
 		576E9C89234EC08400199B25 /* CoffeeShops.json in Resources */ = {isa = PBXBuildFile; fileRef = 576E9C88234EC08400199B25 /* CoffeeShops.json */; };
 		576E9C8B234EF0D800199B25 /* CoffeeShopItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576E9C8A234EF0D800199B25 /* CoffeeShopItemView.xib */; };
 		576E9C8D234EF29E00199B25 /* CoffeeShopItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9C8C234EF29E00199B25 /* CoffeeShopItemView.swift */; };
-		576E9C8F234EF35F00199B25 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9C8E234EF35F00199B25 /* UIView+Additions.swift */; };
 		66A69E882826454E00ADC103 /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A69E872826454E00ADC103 /* CoffeeShop.swift */; };
 		66A69E8C282647CB00ADC103 /* CoffeeShopeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A69E8B282647CB00ADC103 /* CoffeeShopeViewModel.swift */; };
 		66A69E922826DF3800ADC103 /* ReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A69E912826DF3800ADC103 /* ReviewVC.swift */; };
@@ -47,7 +46,6 @@
 		576E9C88234EC08400199B25 /* CoffeeShops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeeShops.json; sourceTree = "<group>"; };
 		576E9C8A234EF0D800199B25 /* CoffeeShopItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopItemView.xib; sourceTree = "<group>"; };
 		576E9C8C234EF29E00199B25 /* CoffeeShopItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopItemView.swift; sourceTree = "<group>"; };
-		576E9C8E234EF35F00199B25 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		66A69E872826454E00ADC103 /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
 		66A69E8B282647CB00ADC103 /* CoffeeShopeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopeViewModel.swift; sourceTree = "<group>"; };
 		66A69E912826DF3800ADC103 /* ReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewVC.swift; sourceTree = "<group>"; };
@@ -97,8 +95,6 @@
 				66A69E862826453D00ADC103 /* Model */,
 				66A69E8D2826CD1B00ADC103 /* View */,
 				66A69E8A2826478200ADC103 /* ViewModel */,
-				66A69E89282645CB00ADC103 /* Networking */,
-				576E9C8E234EF35F00199B25 /* UIView+Additions.swift */,
 				66A69E8E2826CD6200ADC103 /* Resource */,
 				576E9C74234E7B9C00199B25 /* Info.plist */,
 			);
@@ -120,13 +116,6 @@
 				66A69E872826454E00ADC103 /* CoffeeShop.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		66A69E89282645CB00ADC103 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		66A69E8A2826478200ADC103 /* ViewModel */ = {
@@ -272,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				576E9C8F234EF35F00199B25 /* UIView+Additions.swift in Sources */,
 				66A69E882826454E00ADC103 /* CoffeeShop.swift in Sources */,
 				66A69E922826DF3800ADC103 /* ReviewVC.swift in Sources */,
 				66A69E8C282647CB00ADC103 /* CoffeeShopeViewModel.swift in Sources */,

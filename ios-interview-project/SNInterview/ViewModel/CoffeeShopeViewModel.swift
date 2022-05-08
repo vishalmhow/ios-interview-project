@@ -12,6 +12,7 @@ class CoffeeShopeViewModel: NSObject {
     
     var coffeeShopes: [CoffeeShop] = []
     
+    // MARK: - Parse data and return array of item, data may came from server as well and parse logic is dynamic..
     func getCoffeeShopList(fileName: String, completion: @escaping((Bool) -> Void)) {
        let decoder = JSONDecoder()
        guard
